@@ -67,4 +67,18 @@
     //Logs the screen height
     NSLog(@"The Screen Size Is: %f", [self screenHeight]);
 }
+-(BOOL)isiPhoneFourSOrBelow
+{
+    //Returns if device is from first gen to iPhone 4s
+    return [self isThreeFivePhone];
+}
+-(BOOL)isThreeFivePhone
+{
+    //Returns YES if the device is an 3.5-Inch Phone
+    if ([self screenHeight] == 480)
+    {
+        return YES;
+    }
+    return NO;
+}
 @end

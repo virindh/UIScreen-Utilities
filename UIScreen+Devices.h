@@ -17,4 +17,6 @@
 -(CGFloat)screenHeight;
 -(void)reportScreenHeight;
 -(BOOL)isiPhone5or5s;
+-(BOOL)isThreeFivePhone;
+-(BOOL)isiPhoneFourSOrBelow;
 @end
