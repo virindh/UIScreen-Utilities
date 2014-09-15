@@ -18,39 +18,24 @@
 -(BOOL)isFiveFivePhone
 {
     //Returns YES if the device is an iPhone 6(Plus)
-    if ([self screenHeight] == 736)
-    {
-        return YES;
-    }
-    return NO;
+    return ([self screenHeight] == 736);
 }
 -(BOOL)isFourSevenPhone
 {
    //Returns YES if the device is an iPhone 6(Regular)
-    if ([self screenHeight] == 667)
-    {
-        return YES;
-    }
-    return NO;
+    return ([self screenHeight] == 667);
+
 }
 -(BOOL)isiPad
 {
     //Returns YES if the device is an iPad
-    if ([self screenHeight] == 1024)
-    {
-        return YES;
-    }
-    return NO;
+    return ([self screenHeight] == 1024);
 }
+
 -(BOOL)isFourPhone
 {
     //Returns YES if the device is an 4-Inch Phone
-    if ([self screenHeight] == 568)
-    {
-        return YES;
-    }
-    return NO;
-
+    return ([self screenHeight] == 568);
 }
 -(BOOL)isiPhone5or5s
 {
@@ -75,10 +60,6 @@
 -(BOOL)isThreeFivePhone
 {
     //Returns YES if the device is an 3.5-Inch Phone
-    if ([self screenHeight] == 480)
-    {
-        return YES;
-    }
-    return NO;
+    return ([self screenHeight] == 480);
 }
 @end
